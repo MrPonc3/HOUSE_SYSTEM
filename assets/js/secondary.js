@@ -23,7 +23,7 @@ const defaultConfig = {
 const teachersData = {
   aegir: [
     { name: "Ana Sofia Haces", email: "ahaces@ats.edu.mx", houseMaster: false },
-    { name: "Edgar Leyto Leyto", email: "eleyto@ats.edu.mx", houseMaster: false },
+    { name: "Renk Nieto Max", email: "mrenk@ats.edu.mx", houseMaster: false },
     { name: "Etienne Du Toit", email: "edutoit@ats.edu.mx", houseMaster: true },
     { name: "Gloria Morales", email: "gmorales@ats.edu.mx", houseMaster: false },
     { name: "Lilia Durán", email: "lduran@ats.edu.mx", houseMaster: false },
@@ -40,6 +40,7 @@ const teachersData = {
     { name: "James Roman", email: "jroman@ats.edu.mx", houseMaster: true },
     { name: "Judith Páez", email: "jpaez@ats.edu.mx", houseMaster: false },
     { name: "Noel Hernández", email: "nhernandez@ats.edu.mx", houseMaster: false },
+    { name: "Rodríguez Belinda", email: "b.rodriguez@ats.edu.mx", houseMaster: false },
     { name: "Teresa Villela", email: "tvillela@ats.edu.mx", houseMaster: false },
   ],
   nerida: [
