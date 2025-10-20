@@ -34,7 +34,6 @@ const teachersData = {
   ],
   kai: [
     { name: "Ana Cecilia Davila", email: "adavila@ats.edu.mx", houseMaster: false },
-    { name: "Berenice Tinajero", email: "btinajero@ats.edu.mx", houseMaster: false },
     { name: "Betty Olguin", email: "bolguin@ats.edu.mx", houseMaster: false },
     { name: "Carrie Heeter", email: "cheeter@ats.edu.mx", houseMaster: false },
     { name: "Isaac Martínez", email: "imartinez@ats.edu.mx", houseMaster: false },
