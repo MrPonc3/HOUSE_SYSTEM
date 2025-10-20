@@ -26,3 +26,43 @@ body { font-family: 'Poppins', system-ui, -apple-system, Segoe UI, Roboto, sans-
 .master-label{ background: linear-gradient(135deg,#fbbf24,#f59e0b); color:#fff; }
 .quote-list blockquote{ margin:6px 0; padding-left:14px; border-left:3px solid #e5e7eb; font-size:.95rem; }
 
+/* ==== HS / MS visual styles ==== */
+
+/* Badges HS/MS */
+.level-HS { background: #1e87f0; color: #fff; }   /* UIkit primary */
+.level-MS { background: #faa05a; color: #000; }   /* UIkit warning-like */
+
+/* Card top border by level */
+.card-level-HS { border-top: 4px solid #1e87f0; }
+.card-level-MS { border-top: 4px solid #faa05a; }
+
+/* Optional ribbon on top-left showing level */
+.card-level-ribbon {
+  position: absolute;
+  left: 0;
+  top: 0;
+  padding: 4px 10px;
+  clip-path: polygon(0 0, 100% 0, 85% 100%, 0% 100%);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .3px;
+  pointer-events: none;
+}
+.card-level-ribbon.HS { background: #1e87f0; }
+.card-level-ribbon.MS { background: #faa05a; color: #111; }
+
+/* Legend spacing */
+.legend .uk-label { margin-right: 6px; }
+
+/* (Opcional) colores de borde por casa, si no existen aún
+.card-border-aegir { box-shadow: inset 0 0 0 1px rgba(30,135,240,.15); }
+.card-border-kai   { box-shadow: inset 0 0 0 1px rgba(250,160,90,.15); }
+.card-border-nerida{ box-shadow: inset 0 0 0 1px rgba(76,175,80,.15); }
+.card-border-pelagia{ box-shadow: inset 0 0 0 1px rgba(156,39,176,.15); }
+*/
+
+/* Responsive tweaks (opcional) */
+@media (max-width: 640px) {
+  .card-level-ribbon { font-size: 11px; padding: 3px 8px; }
+}
