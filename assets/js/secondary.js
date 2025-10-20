@@ -21,7 +21,8 @@ const defaultConfig = {
 
 /* Data (tal cual) */
 const teachersData = {
- aegir: [
+  aegir: [
+    // 🟦 High School
     { name: "Ana Sofia Haces", email: "ahaces@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Renk Nieto Max", email: "mrenk@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Etienne Du Toit", email: "edutoit@ats.edu.mx", houseMaster: true,  level: "HS" },
@@ -31,8 +32,16 @@ const teachersData = {
     { name: "Luz Alejandra Rodriguez", email: "l.rodriguez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Maria De Jesus Ponce", email: "mponce@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Michael Adam Geer", email: "mgeer@ats.edu.mx", houseMaster: false, level: "HS" },
+
+    // 🟩 Middle School
+    { name: "Joachim Weiss", email: "", houseMaster: true,  level: "MS" },
+    { name: "Olga Renee de la Torre", email: "", houseMaster: false, level: "MS" },
+    { name: "Homero Castillo", email: "", houseMaster: false, level: "MS" },
+    { name: "Fabiola Rodriguez", email: "", houseMaster: false, level: "MS" },
   ],
+
   kai: [
+    // 🟦 High School
     { name: "Ana Cecilia Davila", email: "adavila@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Betty Olguin", email: "bolguin@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Carrie Heeter", email: "cheeter@ats.edu.mx", houseMaster: false, level: "HS" },
@@ -42,8 +51,19 @@ const teachersData = {
     { name: "Noel Hernández", email: "nhernandez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Rodríguez Belinda", email: "b.rodriguez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Teresa Villela", email: "tvillela@ats.edu.mx", houseMaster: false, level: "HS" },
+
+    // 🟩 Middle School
+    { name: "Gaby Cristo", email: "", houseMaster: true,  level: "MS" },
+    { name: "Laura Possamai", email: "", houseMaster: false, level: "MS" },
+    { name: "Carolina Casillas", email: "", houseMaster: false, level: "MS" },
+    { name: "Silvia Albo", email: "", houseMaster: false, level: "MS" },
+    { name: "Joe Becht", email: "", houseMaster: false, level: "MS" },
+    { name: "Pato Mendez", email: "pmendez@ats.edu.mx", houseMaster: false, level: "HS" }, // ya estaba
+    { name: "Laura Solbes", email: "", houseMaster: false, level: "MS" },
   ],
+
   nerida: [
+    // 🟦 High School
     { name: "Cynthia Juárez", email: "c.juarez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Elvia González", email: "egonzalez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Iliana Olvera", email: "iolvera@ats.edu.mx", houseMaster: true,  level: "HS" },
@@ -53,17 +73,32 @@ const teachersData = {
     { name: "Maria Elena Montes", email: "mechavez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Mariana Sabbatini", email: "msabbatini@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Mariola Pintado", email: "mpintado@ats.edu.mx", houseMaster: false, level: "HS" },
+
+    // 🟩 Middle School
+    { name: "Dalia Pecero", email: "", houseMaster: true,  level: "MS" },
+    { name: "Thomas Nijstad", email: "", houseMaster: false, level: "MS" },
+    { name: "Ally Geosits", email: "", houseMaster: false, level: "MS" },
+    { name: "Jimena Fernandez", email: "", houseMaster: false, level: "MS" },
+    { name: "Max Renk", email: "", houseMaster: false, level: "MS" },
+    { name: "Christina Jurgensen", email: "", houseMaster: false, level: "MS" },
   ],
+
   pelagia: [
+    // 🟦 High School
     { name: "Alejandro Magaña", email: "amagana@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Jesus Gonzalez", email: "jegonzalez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Juan Ponce", email: "jponce@ats.edu.mx", houseMaster: true,  level: "HS" },
     { name: "Lilia Gloria Peña", email: "lpena@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Lorena Montiel", email: "lmontiel@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Marcela Morales", email: "mmorales@ats.edu.mx", houseMaster: false, level: "HS" },
-    { name: "Pato Mendez", email: "pmendez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Ruth Lozano Leiva", email: "rlozano@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Victoria Mejía", email: "vmejia@ats.edu.mx", houseMaster: false, level: "HS" },
+
+    // 🟩 Middle School
+    { name: "Juan Carlos Hermosillo", email: "", houseMaster: true,  level: "MS" },
+    { name: "Cecilia Ramon", email: "", houseMaster: false, level: "MS" },
+    { name: "Erika Garcia", email: "", houseMaster: false, level: "MS" },
+    { name: "Maria Roman", email: "", houseMaster: false, level: "MS" },
   ],
 };
 
