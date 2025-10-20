@@ -68,6 +68,7 @@ const teachersData = {
     { name: "Ma.Alejandra Roman", email: "mroman@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Maria Elena Montes", email: "mechavez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Mariana Sabbatini", email: "msabbatini@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Manuel Pelayo", email: "mpelayo@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Mariola Pintado", email: "mpintado@ats.edu.mx", houseMaster: false, level: "HS" },
     // MS
     { name: "Dalia Pecero", email: "", houseMaster: true,  level: "MS" },
