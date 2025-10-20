@@ -21,49 +21,49 @@ const defaultConfig = {
 
 /* Data (tal cual) */
 const teachersData = {
-  aegir: [
-    { name: "Ana Sofia Haces", email: "ahaces@ats.edu.mx", houseMaster: false },
-    { name: "Renk Nieto Max", email: "mrenk@ats.edu.mx", houseMaster: false },
-    { name: "Etienne Du Toit", email: "edutoit@ats.edu.mx", houseMaster: true },
-    { name: "Gloria Morales", email: "gmorales@ats.edu.mx", houseMaster: false },
-    { name: "Lilia Durán", email: "lduran@ats.edu.mx", houseMaster: false },
-    { name: "Lizzette Martinez", email: "lmartinez@ats.edu.mx", houseMaster: false },
-    { name: "Luz Alejandra Rodriguez", email: "l.rodriguez@ats.edu.mx", houseMaster: false },
-    { name: "Maria De Jesus Ponce", email: "mponce@ats.edu.mx", houseMaster: false },
-    { name: "Michael Adam Geer", email: "mgeer@ats.edu.mx", houseMaster: false },
+ aegir: [
+    { name: "Ana Sofia Haces", email: "ahaces@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Renk Nieto Max", email: "mrenk@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Etienne Du Toit", email: "edutoit@ats.edu.mx", houseMaster: true,  level: "HS" },
+    { name: "Gloria Morales", email: "gmorales@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Lilia Durán", email: "lduran@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Lizzette Martinez", email: "lmartinez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Luz Alejandra Rodriguez", email: "l.rodriguez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Maria De Jesus Ponce", email: "mponce@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Michael Adam Geer", email: "mgeer@ats.edu.mx", houseMaster: false, level: "HS" },
   ],
   kai: [
-    { name: "Ana Cecilia Davila", email: "adavila@ats.edu.mx", houseMaster: false },
-    { name: "Betty Olguin", email: "bolguin@ats.edu.mx", houseMaster: false },
-    { name: "Carrie Heeter", email: "cheeter@ats.edu.mx", houseMaster: false },
-    { name: "Isaac Martínez", email: "imartinez@ats.edu.mx", houseMaster: false },
-    { name: "James Roman", email: "jroman@ats.edu.mx", houseMaster: true },
-    { name: "Judith Páez", email: "jpaez@ats.edu.mx", houseMaster: false },
-    { name: "Noel Hernández", email: "nhernandez@ats.edu.mx", houseMaster: false },
-    { name: "Rodríguez Belinda", email: "b.rodriguez@ats.edu.mx", houseMaster: false },
-    { name: "Teresa Villela", email: "tvillela@ats.edu.mx", houseMaster: false },
+    { name: "Ana Cecilia Davila", email: "adavila@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Betty Olguin", email: "bolguin@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Carrie Heeter", email: "cheeter@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Isaac Martínez", email: "imartinez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "James Roman", email: "jroman@ats.edu.mx", houseMaster: true,  level: "HS" },
+    { name: "Judith Páez", email: "jpaez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Noel Hernández", email: "nhernandez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Rodríguez Belinda", email: "b.rodriguez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Teresa Villela", email: "tvillela@ats.edu.mx", houseMaster: false, level: "HS" },
   ],
   nerida: [
-    { name: "Cynthia Juárez", email: "c.juarez@ats.edu.mx", houseMaster: false },
-    { name: "Elvia González", email: "egonzalez@ats.edu.mx", houseMaster: false },
-    { name: "Iliana Olvera", email: "iolvera@ats.edu.mx", houseMaster: true },
-    { name: "Jessica Hernández", email: "jhernandez@ats.edu.mx", houseMaster: false },
-    { name: "Keili Gunden", email: "kgunden@ats.edu.mx", houseMaster: false },
-    { name: "Ma.Alejandra Roman", email: "mroman@ats.edu.mx", houseMaster: false },
-    { name: "Maria Elena Montes", email: "mechavez@ats.edu.mx", houseMaster: false },
-    { name: "Mariana Sabbatini", email: "msabbatini@ats.edu.mx", houseMaster: false },
-    { name: "Mariola Pintado", email: "mpintado@ats.edu.mx", houseMaster: false },
+    { name: "Cynthia Juárez", email: "c.juarez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Elvia González", email: "egonzalez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Iliana Olvera", email: "iolvera@ats.edu.mx", houseMaster: true,  level: "HS" },
+    { name: "Jessica Hernández", email: "jhernandez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Keili Gunden", email: "kgunden@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Ma.Alejandra Roman", email: "mroman@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Maria Elena Montes", email: "mechavez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Mariana Sabbatini", email: "msabbatini@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Mariola Pintado", email: "mpintado@ats.edu.mx", houseMaster: false, level: "HS" },
   ],
   pelagia: [
-    { name: "Alejandro Magaña", email: "amagana@ats.edu.mx", houseMaster: false },
-    { name: "Jesus Gonzalez", email: "jegonzalez@ats.edu.mx", houseMaster: false },
-    { name: "Juan Ponce", email: "jponce@ats.edu.mx", houseMaster: true },
-    { name: "Lilia Gloria Peña", email: "lpena@ats.edu.mx", houseMaster: false },
-    { name: "Lorena Montiel", email: "lmontiel@ats.edu.mx", houseMaster: false },
-    { name: "Marcela Morales", email: "mmorales@ats.edu.mx", houseMaster: false },
-    { name: "Pato Mendez", email: "pmendez@ats.edu.mx", houseMaster: false },
-    { name: "Ruth Lozano Leiva", email: "rlozano@ats.edu.mx", houseMaster: false },
-    { name: "Victoria Mejía", email: "vmejia@ats.edu.mx", houseMaster: false },
+    { name: "Alejandro Magaña", email: "amagana@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Jesus Gonzalez", email: "jegonzalez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Juan Ponce", email: "jponce@ats.edu.mx", houseMaster: true,  level: "HS" },
+    { name: "Lilia Gloria Peña", email: "lpena@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Lorena Montiel", email: "lmontiel@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Marcela Morales", email: "mmorales@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Pato Mendez", email: "pmendez@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Ruth Lozano Leiva", email: "rlozano@ats.edu.mx", houseMaster: false, level: "HS" },
+    { name: "Victoria Mejía", email: "vmejia@ats.edu.mx", houseMaster: false, level: "HS" },
   ],
 };
 
@@ -158,3 +158,10 @@ function initAll(){
   const modal = UIkit.modal('#welcome-modal'); if (modal) modal.show();
 }
 document.addEventListener('DOMContentLoaded', initAll);
+
+function renderBadges(p) {
+  const out = [];
+  if (p.houseMaster) out.push('<span class="uk-label uk-label-success">House Master</span>');
+  if (p.level) out.push(`<span class="uk-label">${p.level}</span>`);
+  return out.join(' ');
+}
