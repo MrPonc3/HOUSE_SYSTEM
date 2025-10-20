@@ -19,10 +19,10 @@ const defaultConfig = {
   footer_text: "House System 2025",
 };
 
-/* Data (tal cual) */
+/* Data */
 const teachersData = {
   aegir: [
-    // 🟦 High School
+    // HS
     { name: "Ana Sofia Haces", email: "ahaces@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Renk Nieto Max", email: "mrenk@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Etienne Du Toit", email: "edutoit@ats.edu.mx", houseMaster: true,  level: "HS" },
@@ -32,16 +32,14 @@ const teachersData = {
     { name: "Luz Alejandra Rodriguez", email: "l.rodriguez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Maria De Jesus Ponce", email: "mponce@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Michael Adam Geer", email: "mgeer@ats.edu.mx", houseMaster: false, level: "HS" },
-
-    // 🟩 Middle School
+    // MS
     { name: "Joachim Weiss", email: "", houseMaster: true,  level: "MS" },
     { name: "Olga Renee de la Torre", email: "", houseMaster: false, level: "MS" },
     { name: "Homero Castillo", email: "", houseMaster: false, level: "MS" },
     { name: "Fabiola Rodriguez", email: "", houseMaster: false, level: "MS" },
   ],
-
   kai: [
-    // 🟦 High School
+    // HS
     { name: "Ana Cecilia Davila", email: "adavila@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Betty Olguin", email: "bolguin@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Carrie Heeter", email: "cheeter@ats.edu.mx", houseMaster: false, level: "HS" },
@@ -51,19 +49,17 @@ const teachersData = {
     { name: "Noel Hernández", email: "nhernandez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Rodríguez Belinda", email: "b.rodriguez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Teresa Villela", email: "tvillela@ats.edu.mx", houseMaster: false, level: "HS" },
-
-    // 🟩 Middle School
+    // MS
     { name: "Gaby Cristo", email: "", houseMaster: true,  level: "MS" },
     { name: "Laura Possamai", email: "", houseMaster: false, level: "MS" },
     { name: "Carolina Casillas", email: "", houseMaster: false, level: "MS" },
     { name: "Silvia Albo", email: "", houseMaster: false, level: "MS" },
     { name: "Joe Becht", email: "", houseMaster: false, level: "MS" },
-    { name: "Pato Mendez", email: "pmendez@ats.edu.mx", houseMaster: false, level: "HS" }, // ya estaba
+    { name: "Pato Mendez", email: "pmendez@ats.edu.mx", houseMaster: false, level: "HS" }, // HS existente
     { name: "Laura Solbes", email: "", houseMaster: false, level: "MS" },
   ],
-
   nerida: [
-    // 🟦 High School
+    // HS
     { name: "Cynthia Juárez", email: "c.juarez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Elvia González", email: "egonzalez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Iliana Olvera", email: "iolvera@ats.edu.mx", houseMaster: true,  level: "HS" },
@@ -73,8 +69,7 @@ const teachersData = {
     { name: "Maria Elena Montes", email: "mechavez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Mariana Sabbatini", email: "msabbatini@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Mariola Pintado", email: "mpintado@ats.edu.mx", houseMaster: false, level: "HS" },
-
-    // 🟩 Middle School
+    // MS
     { name: "Dalia Pecero", email: "", houseMaster: true,  level: "MS" },
     { name: "Thomas Nijstad", email: "", houseMaster: false, level: "MS" },
     { name: "Ally Geosits", email: "", houseMaster: false, level: "MS" },
@@ -82,9 +77,8 @@ const teachersData = {
     { name: "Max Renk", email: "", houseMaster: false, level: "MS" },
     { name: "Christina Jurgensen", email: "", houseMaster: false, level: "MS" },
   ],
-
   pelagia: [
-    // 🟦 High School
+    // HS
     { name: "Alejandro Magaña", email: "amagana@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Jesus Gonzalez", email: "jegonzalez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Juan Ponce", email: "jponce@ats.edu.mx", houseMaster: true,  level: "HS" },
@@ -93,8 +87,7 @@ const teachersData = {
     { name: "Marcela Morales", email: "mmorales@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Ruth Lozano Leiva", email: "rlozano@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Victoria Mejía", email: "vmejia@ats.edu.mx", houseMaster: false, level: "HS" },
-
-    // 🟩 Middle School
+    // MS
     { name: "Juan Carlos Hermosillo", email: "", houseMaster: true,  level: "MS" },
     { name: "Cecilia Ramon", email: "", houseMaster: false, level: "MS" },
     { name: "Erika Garcia", email: "", houseMaster: false, level: "MS" },
@@ -135,68 +128,97 @@ const quotesData = {
 };
 
 /* Helpers */
-const mailto = (email) => `<a href="mailto:${email}" class="uk-link-muted">${email}</a>`;
+const mailto = (email) => email ? `<a href="mailto:${email}" class="uk-link-muted">${email}</a>` : '';
+
 function teacherCard(t, houseKey){
   const houseClass =
     houseKey === 'aegir' ? 'card-border-aegir' :
     houseKey === 'kai' ? 'card-border-kai' :
     houseKey === 'nerida' ? 'card-border-nerida' : 'card-border-pelagia';
 
+  const levelClass = t.level === 'MS' ? 'card-level-MS' : 'card-level-HS';
+  const levelBadge = t.level
+    ? `<span class="uk-label ${t.level === 'MS' ? 'level-MS' : 'level-HS'}">${t.level}</span>`
+    : '';
+
   return `
     <div>
-      <div class="uk-card uk-card-default uk-card-hover uk-border-rounded ${houseClass}">
+      <div class="uk-card uk-card-default uk-card-hover uk-border-rounded ${houseClass} ${levelClass}">
         <div class="uk-card-body uk-position-relative">
-          ${t.houseMaster ? `<span class="uk-label master-label uk-position-small uk-position-top-right">👑 House Master</span>` : ''}
+          <!-- Ribbon opcional -->
+          <div class="card-level-ribbon ${t.level || ''}">${t.level || ''}</div>
+
+          ${t.houseMaster ? `<span class="uk-label uk-label-success uk-position-small uk-position-top-right">👑 House Master</span>` : ''}
+
           <h3 class="uk-card-title uk-margin-small-bottom">${t.name}</h3>
           <p class="uk-text-meta uk-margin-remove">${mailto(t.email)}</p>
+
+          <!-- Badges debajo del nombre -->
+          <div class="uk-margin-small-top">${levelBadge}</div>
         </div>
       </div>
     </div>
   `;
 }
+
 function renderGrid(houseKey, list){
+  const sorted = [...list].sort((a,b) => {
+    // Masters primero
+    if (a.houseMaster && !b.houseMaster) return -1;
+    if (!a.houseMaster && b.houseMaster) return 1;
+    // HS antes que MS
+    const rank = (x) => x.level === 'HS' ? 0 : (x.level === 'MS' ? 1 : 2);
+    return rank(a) - rank(b);
+  });
   const el = document.getElementById(`grid-${houseKey}`);
-  el.innerHTML = list.map(t => teacherCard(t, houseKey)).join('');
+  el.innerHTML = sorted.map(t => teacherCard(t, houseKey)).join('');
   UIkit.update(el);
 }
+
 function renderQuotes(houseKey){
   const wrap = document.getElementById(`quotes-${houseKey}`);
   const arr = quotesData[houseKey] || [];
   if (!wrap) return;
   wrap.innerHTML = `<div class="quote-list">${arr.map(q => `<blockquote>“${q}”</blockquote>`).join('')}</div>`;
 }
+
 function attachFilters(houseKey){
   const input = document.getElementById(`search-${houseKey}`);
   const chk = document.getElementById(`masters-${houseKey}`);
+  const levelSel = document.getElementById(`level-${houseKey}`);
+
   const apply = () => {
-    const q = (input.value || '').toLowerCase().trim();
-    const onlyMasters = !!chk.checked;
+    const q = (input?.value || '').toLowerCase().trim();
+    const onlyMasters = !!(chk && chk.checked);
+    const levelFilter = (levelSel && levelSel.value) || 'ALL';
+
     const base = teachersData[houseKey] || [];
     const filtered = base.filter(t => {
-      const hit = t.name.toLowerCase().includes(q) || t.email.toLowerCase().includes(q);
-      return hit && (!onlyMasters || t.houseMaster);
+      const hit = t.name.toLowerCase().includes(q) || (t.email || '').toLowerCase().includes(q);
+      const matchMaster = !onlyMasters || t.houseMaster;
+      const matchLevel = (levelFilter === 'ALL') || (t.level === levelFilter);
+      return hit && matchMaster && matchLevel;
     });
+
     renderGrid(houseKey, filtered);
   };
-  input.addEventListener('input', apply);
-  chk.addEventListener('change', apply);
+
+  input?.addEventListener('input', apply);
+  chk?.addEventListener('change', apply);
+  levelSel?.addEventListener('change', apply);
   apply();
 }
+
 function applyConfig(){
   document.getElementById('mainTitle').textContent = defaultConfig.main_title;
   document.getElementById('schoolName').textContent = defaultConfig.school_name;
   document.getElementById('footerText').textContent = defaultConfig.footer_text;
 }
+
 function initAll(){
   applyConfig();
   ['aegir','kai','nerida','pelagia'].forEach(h => { attachFilters(h); renderQuotes(h); });
   const modal = UIkit.modal('#welcome-modal'); if (modal) modal.show();
 }
-document.addEventListener('DOMContentLoaded', initAll);
 
-function renderBadges(p) {
-  const out = [];
-  if (p.houseMaster) out.push('<span class="uk-label uk-label-success">House Master</span>');
-  if (p.level) out.push(`<span class="uk-label">${p.level}</span>`);
-  return out.join(' ');
-}
+document.addEventListener('DOMContentLoaded', initAll);
