@@ -50,8 +50,8 @@ const teachersData = {
     { name: "Rodríguez Belinda", email: "b.rodriguez@ats.edu.mx", houseMaster: false, level: "HS" },
     { name: "Teresa Villela", email: "tvillela@ats.edu.mx", houseMaster: false, level: "HS" },
     // MS
-    { name: "Gaby Cristo", email: "", houseMaster: true,  level: "MS" },
-    { name: "Laura Possamai", email: "", houseMaster: false, level: "MS" },
+    { name: "Gaby Cristo", email: "", houseMaster: false,  level: "MS" },
+    { name: "Laura Possamai", email: "", houseMaster: true, level: "MS" },
     { name: "Carolina Casillas", email: "", houseMaster: false, level: "MS" },
     { name: "Silvia Albo", email: "", houseMaster: false, level: "MS" },
     { name: "Joe Becht", email: "", houseMaster: false, level: "MS" },
